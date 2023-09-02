@@ -34,13 +34,16 @@ const AboutMe = () => {
 						<Col md={7}>
 							<h1>About Me</h1>
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Delectus doloribus iusto nostrum odio rem voluptatem
-								saepe ab, veniam suscipit minus quidem vitae neque
-								minima labore magnam in ipsam incidunt eum a molestiae
-								tempore eveniet itaque. Doloribus, recusandae quia autem
-								voluptas odio suscipit minus blanditiis voluptatum,
-								delectus magni vitae fuga libero.
+								At the intersection of technology and creativity, I am
+								Rehan, a passionate BCA student in the 3rd year with a
+								strong inclination towards frontend development. With an
+								insatiable curiosity for coding and a commitment to
+								delivering innovative user experiences, I aspire to
+								shape the digital world with my skills and
+								dedication.Driven by the ever-evolving tech landscape, I
+								strive to bring aesthetics and functionality together,
+								crafting seamless digital solutions that leave a lasting
+								impression
 							</p>
 							<h2 className="mt-4">Connect Here</h2>
 							<div className="social-links d-flex align-items-center mb-4">

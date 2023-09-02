@@ -41,10 +41,10 @@ const Hero = () => {
 									}}
 								>
 									<h4>
-										Lorem ipsum dolor sit amet, consectetur
-										adipisicing elit. Reprehenderit ratione,
-										consequatur eligendi dolorem, maiores alias
-										necessitatibus perspiciatis
+										Rehan, a 3rd-year BCA student specializing in
+										computer science, is proficient in frontend
+										development, blending creativity and code to
+										deliver exceptional user experiences.
 									</h4>
 								</motion.div>
 								<motion.div
