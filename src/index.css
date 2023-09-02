@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Poppins:wght@100;200;300;600;700;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	scroll-behavior: smooth;
+}
+
+.navbar-toggler {
+	border-color: white;
+}
+
+.navbar-toggler:focus {
+	box-shadow: 0 0 0 white;
+}
+
+.hero,
+.about-us {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.left-text h1 {
+	font-size: 70px;
+	-webkit-text-stroke: 2px black;
+	color: white;
+	margin-bottom: 0px;
+}
+
+.left-text p {
+	font-size: 100px;
+	background-image: url('https://images.unsplash.com/photo-1533109721025-d1ae7ee7c1e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+	background-size: cover;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	font-weight: 600;
+	margin-bottom: 0px;
+	line-height: 8rem;
+}
+
+.left-text h4 {
+	margin-bottom: 20px;
+}
+
+.type-1-btn {
+	background: linear-gradient(to right, #6e5591 35%, #d51a74 100%);
+	color: white;
+	font-size: 20px;
+	padding: 10px 15px;
+	border-radius: 30px;
+	border: none;
+}
+
+.type-2-btn {
+	background-color: white;
+	color: black;
+	font-size: 20px;
+	padding: 8.2px 15px;
+	border-radius: 30px;
+}
+
+/* About us css */
+.about-us h1,
+.skills h1,
+.projects h1,
+.contact h1 {
+	font-size: 70px;
+	background-image: url('./assets/images/text-bg-image.avif');
+	background-size: cover;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	font-weight: 600;
+	margin-bottom: 0px;
+	line-height: 8rem;
+}
+
+/* skill secton css */
+.skill-logo {
+	text-align: center;
+}
+
+.skill-logo-img {
+	height: 100px;
+}
+
+/* projects section css */
+
+/* contact form */
+.contact .input-box {
+	padding: 10px 10px;
+	border-color: pink;
+}
+
+.contact h2 {
+	font-size: 40px;
+	font-weight: 600;
+	-webkit-text-stroke: 2px black;
+	color: white;
+	margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 576px) {
+	.left-text h1,
+	.about-us h1 {
+		font-size: 55px;
+	}
+	.contact h1 {
+		font-size: 40px;
+	}
+	.left-text p {
+		font-size: 60px;
+		line-height: 4rem;
+	}
+	.left-text h4 {
+		margin: 30px 0px;
+	}
+	.left-text .btns {
+		display: flex;
+		flex-direction: column;
+	}
+	.type-1-btn {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.skill-logo-img {
+		height: 80px;
+	}
+}
