@@ -14,12 +14,15 @@ body {
 	scroll-behavior: smooth;
 }
 
-.navbar-toggler {
-	border-color: white;
+.navbar nav a {
+	color: black;
+	text-decoration: none;
+	margin: 0px 10px;
+	font-size: 19px;
 }
 
-.navbar-toggler:focus {
-	box-shadow: 0 0 0 white;
+.offcanvas-menu {
+	font-size: 30px;
 }
 
 .hero,
