@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Col, Container, Form, Row } from 'react-bootstrap';
+import { Col, Container, Form, Modal, Row } from 'react-bootstrap';
 
 //react-icons
 import { BsFacebook } from 'react-icons/bs';
@@ -21,6 +21,10 @@ const Contact = () => {
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
 
+	const [modal, setModal] = useState(false);
+
+	const handleClose = () => setModal(false);
+	const handleShow = () => setModal(true);
 	const formSubmission = (event, name, email, message) => {
 		event.preventDefault();
 		set(ref(db, 'user/' + Date.now()), {
@@ -31,17 +35,8 @@ const Contact = () => {
 		setName('');
 		setEmail('');
 		setMessage('');
-		alert('Succesfully form submitted');
+		handleShow();
 	};
-
-	// const formSubmission = (e) => {
-	// 	e.preventDefault();
-	// 	console.log(name, email, message);
-	// 	setName('');
-	// 	setEmail('');
-	// 	setMessage('');
-	// 	alert('Form Succesfully Submitted');
-	// };
 	return (
 		<>
 			<div className="contact" id="contactme">
@@ -117,6 +112,15 @@ const Contact = () => {
 									<button className="type-1-btn ">Submit</button>
 								</motion.div>
 							</Form>
+							<Modal
+								show={modal}
+								onHide={handleClose}
+								className="mt-5 pt-5 "
+							>
+								<Modal.Header closeButton>
+									<Modal.Title>Thanks for Connecting</Modal.Title>
+								</Modal.Header>
+							</Modal>
 						</Col>
 						<Col
 							xs={12}
