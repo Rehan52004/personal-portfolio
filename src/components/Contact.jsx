@@ -167,7 +167,7 @@ const Contact = () => {
 							<div
 								style={{
 									position: 'absolute',
-									bottom: '0',
+									bottom: -15,
 									right: 0,
 									width: '50px',
 									height: '50px',
@@ -192,7 +192,7 @@ const Contact = () => {
 					</Row>
 				</Container>
 				<p
-					className="text-center my-2 my-md-5 py-2 py-md-5"
+					className="text-center my-4 my-md-5 py-3 py-md-5"
 					style={{ fontSize: '25px' }}
 				>
 					&copy; Copyright 2023
