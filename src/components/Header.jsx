@@ -14,6 +14,7 @@ const Header = () => {
 				initial={{ y: -300 }}
 				animate={{ y: 0 }}
 				transition={{ duration: 1.5, delay: 2 }}
+				id="header"
 			>
 				<h3>Portfolio</h3>
 				<nav className="d-none d-lg-flex">

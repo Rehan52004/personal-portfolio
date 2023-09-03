@@ -18,7 +18,7 @@ const Projects = () => {
 			<div className="projects" id="projects">
 				<h1 className="text-center">Projects</h1>
 				<Container className="my-5">
-					<Row className="row-gap-4 my-5">
+					<Row className="row-gap-5 my-5">
 						<ProjectCard
 							code="https://github.com/Rehan52004/To-Do-List"
 							live="https://to-do-list-website1.netlify.app/"

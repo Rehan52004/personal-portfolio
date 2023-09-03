@@ -120,14 +120,17 @@ body {
 	.about-us h1 {
 		font-size: 55px;
 	}
-	.contact h1 {
-		font-size: 40px;
+	.contact h1,
+	.projects h1,
+	.skills h1 {
+		font-size: 50px;
 	}
 	.left-text p {
 		font-size: 60px;
 		line-height: 4rem;
 	}
 	.left-text h4 {
+		font-size: 18px;
 		margin: 30px 0px;
 	}
 	.left-text .btns {
