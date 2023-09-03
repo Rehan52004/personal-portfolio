@@ -105,6 +105,7 @@ body {
 .contact .input-box {
 	padding: 10px 10px;
 	border-color: pink;
+	box-shadow: none;
 }
 
 .contact h2 {

@@ -11,19 +11,37 @@ import { BsArrowUp } from 'react-icons/bs';
 
 import { motion } from 'framer-motion';
 
+import { app } from '../firebase';
+import { getDatabase, ref, set } from 'firebase/database';
+
+const db = getDatabase(app);
+
 const Contact = () => {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
 
-	const formSubmission = (e) => {
-		e.preventDefault();
-		console.log(name, email, message);
+	const formSubmission = (event, name, email, message) => {
+		event.preventDefault();
+		set(ref(db, 'user/' + Date.now()), {
+			username: name,
+			email,
+			message,
+		});
 		setName('');
 		setEmail('');
 		setMessage('');
-		alert('Form Succesfully Submitted');
+		alert('Succesfully form submitted');
 	};
+
+	// const formSubmission = (e) => {
+	// 	e.preventDefault();
+	// 	console.log(name, email, message);
+	// 	setName('');
+	// 	setEmail('');
+	// 	setMessage('');
+	// 	alert('Form Succesfully Submitted');
+	// };
 	return (
 		<>
 			<div className="contact" id="contactme">
@@ -31,7 +49,11 @@ const Contact = () => {
 				<Container>
 					<Row className="mx-auto row-gap-4 mt-3 mt-md-5 pt-3 pt-md-4">
 						<Col xs={12} md={6}>
-							<Form onSubmit={(e) => formSubmission(e)}>
+							<Form
+								onSubmit={(event) =>
+									formSubmission(event, name, email, message)
+								}
+							>
 								<Form.Group className="mb-3" controlId="formBasicText">
 									<motion.div
 										initial={{ y: 100, opacity: 0 }}
