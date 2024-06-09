@@ -1,22 +1,22 @@
-import React from 'react';
-import { Col, Container, NavLink, Row } from 'react-bootstrap';
-import { motion } from 'framer-motion';
+import React from "react";
+import { Col, Container, NavLink, Row } from "react-bootstrap";
+import { motion } from "framer-motion";
 
-import resume from '../assets/new-resume.pdf';
+import resume from "../assets/new-resume.pdf";
 const Hero = () => {
   return (
     <>
-      <div className='hero h-100' id='home'>
-        <Container className='mb-3'>
-          <Row className='justify-content-center my-1 my-md-5 py-4 py-md-5'>
+      <div className="hero h-100" id="home">
+        <Container className="mb-3">
+          <Row className="justify-content-center my-1 my-md-5 py-4 py-md-5">
             <Col
               lg={10}
               style={{
-                display: 'flex',
-                alignItems: 'center',
+                display: "flex",
+                alignItems: "center",
               }}
             >
-              <div className='left-text text-center'>
+              <div className="left-text text-center">
                 <motion.div
                   initial={{ x: -1000 }}
                   animate={{ x: 0 }}
@@ -40,7 +40,7 @@ const Hero = () => {
                     ease: [0, 0.71, 0.2, 1.01],
                   }}
                 >
-                  <h5 style={{ marginBottom: '15px' }}>
+                  <h5>
                     Hi, I'm Rehan, a final-year BCA student about to graduate. I
                     have experience in building front-end web applications with
                     React and am passionate about creating responsive user
@@ -49,7 +49,7 @@ const Hero = () => {
                   </h5>
                 </motion.div>
                 <motion.div
-                  className='btns'
+                  className="btns"
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{
@@ -58,16 +58,16 @@ const Hero = () => {
                     ease: [0, 0.71, 0.2, 1.01],
                   }}
                 >
-                  <button className='type-1-btn me-3'>
-                    <NavLink href='#contactme'>Contact Me</NavLink>
+                  <button className="type-1-btn me-3">
+                    <NavLink href="#contactme">Contact Me</NavLink>
                   </button>
-                  <button className='type-2-btn'>
+                  <button className="type-2-btn">
                     <a
                       href={resume}
                       download
                       style={{
-                        color: 'black',
-                        textDecoration: 'none',
+                        color: "black",
+                        textDecoration: "none",
                       }}
                     >
                       Download CV
@@ -78,7 +78,7 @@ const Hero = () => {
             </Col>
           </Row>
         </Container>
-        <hr color='black' />
+        <hr color="black" />
       </div>
     </>
   );
